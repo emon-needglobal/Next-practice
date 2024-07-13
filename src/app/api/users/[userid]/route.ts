@@ -4,7 +4,7 @@ import data from "@/data.json";
 export async function GET(request: Request, context: any) {
   const { params } = context;
   console.log(params);
-  console.log(params);
+  console.log("hello world")
 
   const user = data.filter((x) => params.userid === x.id.toString());
 
